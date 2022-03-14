@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기본 레이아웃</title>
+    <style>
+        *{margin:0;padding:0;box-sizing: border-box;font-size:inherit;font-weight: normal;color:inherit;}
+        ul,ol{list-style: none;}
+        a{text-decoration: none;}
+        img{vertical-align: middle;} /*수직 정렬*/
+        body {line-height: 1;}
+        h1 {font-size:30px;text-align:center;margin-bottom:100px;}
+
+        .sc01{
+            padding:100px 0;
+            background: #f2f2f2;
+            text-align:center;
+        }
+        .sc01 .container{
+            margin: 0 auto;
+            width: 1300px;
+        }
+        .sc01 h2{
+            font-size:30px;
+            font-weight:bold;
+            margin-bottom:20px;
+        }
+        .sc01>p {
+            font-size:15px;
+            margin-bottom:30px;
+        }
+
+        .sc01 .container::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .sc01 figure{
+            float: left;
+            width:20%;
+            padding:0 5px;
+            text-align:center;
+        }
+        .sc01 figure img {
+            width:100%;
+            margin-bottom:10px;
+        }
+        .sc01 figure span {
+            color:#f00;
+            margin-bottom:20px;
+        }
+        .sc01 figure a {
+            display:block;
+            margin:10px auto;
+            width:70px;
+            height:30px;
+            background:#333;
+            color:rgb(255, 255, 255);
+            line-height:30px;
+            border-radius: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>기본 레이아웃 01</h1>
+
+    <section class="sc01">
+        <h2>아이유, 사진 모음.</h2>
+        <p>가수연예인배우</p>
+        <div class="container">
+            <figure>
+                <img src="../img/iu1.jpg" alt="">
+                <span>아이유 예쁘다.</span>
+                <a href="!#">more</a>
+            </figure>
+            <figure>
+                <img src="../img/iu2.jpg" alt="">
+                <span>아이유 예쁘다.</span> 
+                <a href="!#">more</a>
+            </figure>
+            <figure>
+                <img src="../img/iu3.jpg" alt="">
+                <span>아이유 예쁘다.</span>
+                <a href="!#">more</a>
+            </figure>
+            <figure>
+                <img src="../img/iu4.jpg" alt="">
+                <span>아이유 예쁘다.</span>
+                <a href="!#">more</a>
+            </figure>
+            <figure>
+                <img src="../img/iu5.jpg" alt="">
+                <span>아이유 예쁘다.</span>
+                <a href="!#">more</a>
+            </figure>
+        </div>
+    </section>
+
+
+</body>
+
+</html>

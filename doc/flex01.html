@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex - box를 가로로 배치하는 방법01</title>
+    <!--display : flex, grid, ablo, inline-block, float, posim-->
+    <style>
+        /*reset*/
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        ul {
+            list-style: none;
+        }
+        section{
+            padding:100px 0;
+            background-color: gray;
+        }
+        .container{
+            display: flex;
+            width:1200px;
+            margin:0 auto;
+            background-color: blueviolet;
+        }
+
+        .container div{
+            background-color: rgb(243, 91, 243);
+            flex:1; 
+            /*display flex 부모요소에 flex:1; 주면 균일분배 width: 1/n % 동일  */
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <!-- section = div class(div 큰 박스) -->
+    <!--시멘틱태그 - header,main,section,footer,nav,article,aside,figure -->
+    <section>
+        <div class="container">
+            <div>a</div>
+            <div>b</div>
+            <div>c</div>
+            <div>d</div>
+            <div>e</div>
+            <div>f</div>
+        </div>
+    </section>
+
+</body>
+
+</html>

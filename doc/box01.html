@@ -1,1 +1,75 @@
-박스모델을 배울것임
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박스모델 01 - 요소에 대한 기본 성질을 설명한다.</title>
+    <style>
+        /* tag selector */
+        body {margin:0}
+        div{
+            width: 300px; /*가로 박스 범위*/
+            background-color: aqua;
+            padding:20px; /*박스 내벽*/
+            margin:20px; /*박스 외벽(경계선 바깥)*/
+            border:1px solid black /*경계선*/
+        }
+         /*총 박스 크기 = width 30 + padding 20 *2 = 70*/
+
+        .border-box {
+            box-sizing: border-box; /*사이즈 안으로 강제로 가둠*/
+            width:300px;
+            background-color: yellow ;
+            padding:20px;
+            margin:20px;
+            border:1px solid black
+        }
+
+
+        span {
+            width:300px;
+            background-color: aquamarine;
+            padding:20px;
+            margin:20px;
+            border:1px solid black;
+            height:100px;
+        }
+
+        .display-block{
+            display:block;
+            box-sizing:border-box;
+            background-color: yellow;
+
+        }
+    </style>
+</head>
+<body>
+<!--그림 글자(html의 내용에 관련된 tag를 뺀 거의 모든 tag는 박스이다. display:block; 속성을 가진다)-->
+<!--
+    1.box는 투명하다.
+    2.box는 width:auto; 로 꽉 채운다. <=> span은 해당내용만큼만 채움
+    3.box는 사교적이지 않다. 옆에 다른 element가 오지 못한다.
+-->
+
+<div>
+    box
+</div>
+<div class="border-box">
+    box
+</div>
+
+<!--
+    1.inline element는 width값을 가지지 못한다.
+    2.inline element는 아래위 margin padding 값을 가지지 못한다.
+    3.inline element는 좌우 margin padding 값을 가진다.
+-->
+<span>  
+    inline
+</span>
+<span class="display-block">  <!--박스가 되어라-->
+    inline
+</span>
+
+</body>
+</html>

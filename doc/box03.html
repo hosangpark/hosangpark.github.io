@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박스모델 03 - 요소를 겹쳐서 사용하기. </title>
+    <style>
+        *{margin:0;padding:0;box-sizing: border-box;}
+        section{
+            background:blue;
+            text-align: center;
+        }
+        /* 보통 ul,ol 둘 다 쓴다*/
+        ul{
+            margin:0 auto;
+            list-style:none;
+            width:500px;
+            background: red;
+        }
+        
+        li{
+            background-color: aqua;
+            width:400px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- ul unorder list 순서가 붙지 않은 list / 
+        list는 list item만 자식으로 가진다/
+        ul 은 li만 자식으로 가진다 div , a 불가
+    -->
+    <section>
+    <ul>
+        <li>box01</li>
+        <li>box02</li>
+        <li>box03</li>
+        <li>box04</li>
+    </ul>
+    <!--ul box ol box 동일-->
+
+
+    </section>
+    
+</body>
+</html>

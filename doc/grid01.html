@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid </title>
+    <!--display : flex, grid, ablo, inline-block, float, posim-->
+    <style>
+        /*reset*/
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        ul {
+            list-style: none;
+        }
+        section{
+            padding:100px 0;
+            background-color: gray;
+            border: 3px solid blue;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            width:1200px;
+            margin:0 auto;
+            background-color: blueviolet;
+            border : 3px solid black;
+        }
+
+        .container div{
+            background-color: rgb(243, 91, 243);
+            padding:0 15px;
+            border : 2px solid red;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <!-- section = div class(div 큰 박스) -->
+    <!--시멘틱태그 - header,main,section,footer,nav,article,aside,figure -->
+    <section>
+        <div class="container">
+            <div>a</div>
+            <div>b</div>
+            <div>c</div>
+        </div>
+    </section>
+
+</body>
+
+</html>
