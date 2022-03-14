@@ -1,1 +1,88 @@
-2
+.mainVisual .mainSlide figure{
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+}
+
+.mainVisual .mainSlide figure.itm01{
+    background-image:url(../img_iu/iu1.jpg);
+}
+
+.mainVisual .mainSlide figure.itm02{
+    background-image:url(../img_iu/iu2.jpg);
+}
+
+.mainVisual .mainSlide figure.itm03{
+    background-image:url(../img_iu/iu3.jpg);
+}
+.mainVisual .slick-dots {
+    position: absolute;
+    left:50%;
+    bottom: 50px;
+    display: flex; /*버튼 박스들을 플렉스 배치 */
+    justify-content: center; /*dots를 중앙으로 오게함*/
+    gap: 10px; /*버튼사이간격*/
+    transform:translateX(-50%);
+}
+
+.mainVisual .slick-dots li{ /*버튼*/
+    background: rgb(255, 255, 255);
+    width: 100px;
+    height: 4px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.mainVisual .slick-dots li.slick-active{
+    background: rgb(125, 241, 241);
+}
+
+.mainVisual .slick-dots button{
+    display: none;
+}
+
+/* 메인 슬라이드 박스를 이용한 화살표 만들기
+.mainVisual .slick-arrow {
+    position: absolute;
+    z-index: 999;
+    width: 50px;
+    height: 50px;
+    border:none;
+    border-top: 2px solid rgb(52, 153, 221);
+    border-left: 2px solid rgb(52, 153, 221);
+    outline: none;
+    cursor: pointer;
+    background: transparent; /*버튼 배경 사라짐*
+    text-indent: -999%; 
+}
+
+.mainVisual .slick-prev {
+    top:50%;
+    left: 100px;
+    transform:translateY(-50%) rotate(-45deg);
+}
+.mainVisual .slick-next {
+    top:50%;
+    right:100px;
+    transform:translateY(-50%) rotate(135deg);
+}
+*/
+.mainVisual {
+    position: relative;
+}
+.mainVisual .slideArrows i {
+    position: absolute;
+    top: 50%;
+    font-size: 100px;
+    color:rgba(225,225,225,0.5)
+}
+
+.mainVisual .slideArrows .xi-arrow-left{
+    transform:translateY(-50%);left:50px
+}
+
+.mainVisual .slideArrows .xi-arrow-right{
+    transform:translateY(-50%);right:50px
+}
