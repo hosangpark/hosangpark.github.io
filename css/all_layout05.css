@@ -27,6 +27,7 @@ h1{
 }
 
 .tabMenu .tabLink{
+    text-align: center;
     display: flex;
 }
 
@@ -36,22 +37,48 @@ h1{
 
 .tabMenu .tabLink li{
     cursor: pointer;
+    margin-bottom: 5px;
 }
 
 .tabMenu .tabLink li.active{
     color: aqua;
 }
-/*
+
 .tabMenu .tabContent{
-    
+    margin-bottom: 10px;    
+    position: relative;
 }
-*/
+
+.contentmenu:nth-child(1){
+    background: rgb(208, 233, 216);
+    position: absolute;
+    left: 0%;
+}
+.contentmenu:nth-child(2){
+    background: rgb(208, 233, 216);
+    position: absolute;
+    left: 25%;
+}
+.contentmenu:nth-child(3){
+    background: rgb(208, 233, 216);
+    position: absolute;
+    left: 50%;
+}
+.contentmenu:nth-child(4){
+    background: rgb(208, 233, 216);
+    position: absolute;
+    left: 75%;
+}
+
 .tabMenu .tabContent>div{
     display: none;
 }
 
 .tabMenu .tabContent>div.active{
     display: block;
+    text-align: center;
+    width: 25%;
+    
 }
 
 .bgfixed {
