@@ -12,7 +12,7 @@ function moveon(){
 $('.tabLink li').on('click', moveon);
 
 $('.xi-close').on('click', function(){
-    $('.headerWrap').slideUp();
+    $('.headerWrap').slideToggle();
 })
 
 // console.log($(this), $(this).index()) 
