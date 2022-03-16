@@ -1,0 +1,104 @@
+.headerWrap .banner{
+    background: rgb(220, 247, 199);
+    width: 2100px;
+    height: 30px;
+}
+
+.Toggle{
+    position: absolute;
+    left: 70%;
+    cursor: pointer;
+}
+
+h1{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.tabMenu {
+    height: 37px;
+    background: #f2f2f2;
+}
+
+.tabMenu .container{
+    width: 600px;
+    margin: 0 auto;    
+}
+
+.tabMenu .tabLink li{
+    cursor: pointer;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 17px;
+    color: rgb(63, 97, 141);
+}
+
+.tabLink li:hover{
+    background: rgb(164, 245, 245);
+    opacity:1;
+}
+
+.tabMenu .tabContent{ 
+    text-align: center;
+    width: 600px;
+    position: absolute;
+    display: flex;
+}
+
+.contentmenu{
+    flex:1;
+    height: 100px;
+    padding: auto;
+    position: relative;
+    opacity:0.85;    
+}
+
+.alltab div{    
+    opacity: 0; 
+    padding: 5px;
+    background: white;
+}
+
+.allcontent01:hover div{    
+    opacity: 1; 
+    transition: 0.5s;
+}
+
+.allcontent02:hover div{    
+    opacity: 1; 
+    transition: 0.1s;
+}
+
+.allcontent03:hover div{    
+    opacity: 1; 
+    transition: 0.1s;
+}
+
+.allcontent04:hover div{    
+    opacity: 1; 
+    transition: 0.1s;
+}
+
+
+
+.alltab div:hover{
+    background: rgb(245, 185, 198);
+}
+
+
+
+.bgfixed {
+   padding: 200px 0;
+   text-align: center;
+   color: #fff;
+   background: url(../img_iu/iu4.jpg) no-repeat center center/cover ;
+   background-attachment: fixed;
+}
+
+.bgfixed h2{
+   font-size: 15px;
+   font-weight: 100;
+   letter-spacing: 1em;
+   margin-bottom: 30px;
+}
