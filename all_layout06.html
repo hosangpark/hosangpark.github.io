@@ -26,12 +26,13 @@
         </div>
         <header class="headerWrap">
             <div class="container">
-                <h1>
-                    <a href="/">
+                <div><h1>
+                    <a href="/github/all_layout06.html">
                         <img src="./images/grafflogo.png" alt="">
                     </a> 
                 </h1>
-                <nav>
+                </div>
+                <nav class="gnb">
                     <ul>
                         <li><a href="#!">하이주얼리</a></li>
                         <li><a href="#!">주얼리 컬렉션</a></li>
@@ -40,17 +41,39 @@
                         <li><a href="#!">특별한 솔리테어</a></li>
                     </ul>
                 </nav>                
-            <div class="serchForm">
-                serch form
-
+            <div class="searchForm">
+                <form name="searchForm" id="searchForm" active="" method="post">
+                    <input type="search" name="searchvalue" id="searchvalue" placeholder="입력" required>
+                    <button><i class="xi-search"></i></button>
+                </form>
             </div>
 
             </div>
-
         </header>
             <!--머릿말 logo h1 nav -->
-            <main>
-            <!-- section content slide -->
+            <main>                        
+                <section class="mainVisual">
+                    <div class="visualSlide">
+                    <figure class="itm01 slick-active">
+                        <div class="inner">
+                            <h3>01 . JEWELLERY COLLECTION</h3>
+                            <p>모던하면서도 클래식한 디자인들을 완벽하게 표현한 그라프 하우스의 시그너쳐 컬렉션은 다양한 컷</p>
+                        </div>
+                    </figure>
+                    <figure class="itm02 slick-active">
+                        <div class="inner">
+                            <h3>02 . JEWELLERY COLLECTION</h3>
+                            <p>모던하면서도 클래식한 디자인들을 완벽하게 표현한 그라프 하우스의 시그너쳐 컬렉션은 다양한 컷</p>
+                        </div>
+                    </figure>
+                    <figure class="itm03 slick-active">
+                        <div class="inner">
+                            <h3>03 . JEWELLERY COLLECTION</h3>
+                            <p>모던하면서도 클래식한 디자인들을 완벽하게 표현한 그라프 하우스의 시그너쳐 컬렉션은 다양한 컷</p>
+                        </div>
+                    </figure>
+                    </div>
+                </section>
             </main>
         <footer class="footerWap">
             <!--copyright address -->
