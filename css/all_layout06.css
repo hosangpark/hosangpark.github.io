@@ -1,104 +1,67 @@
-.headerWrap .banner{
-    background: rgb(220, 247, 199);
-    width: 2100px;
-    height: 30px;
+/**/
+
+.topBanner{
+    padding: 24px 0;
+    background: #f3f3f3;
 }
 
-.Toggle{
-    position: absolute;
-    left: 70%;
-    cursor: pointer;
-}
-
-h1{
-    text-align: center;
-    font-size: 30px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-.tabMenu {
-    height: 37px;
-    background: #f2f2f2;
-}
-
-.tabMenu .container{
-    width: 600px;
-    margin: 0 auto;    
-}
-
-.tabMenu .tabLink li{
-    cursor: pointer;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-size: 17px;
-    color: rgb(63, 97, 141);
-}
-
-.tabLink li:hover{
-    background: rgb(164, 245, 245);
-    opacity:1;
-}
-
-.tabMenu .tabContent{ 
-    text-align: center;
-    width: 600px;
-    position: absolute;
-    display: flex;
-}
-
-.contentmenu{
-    flex:1;
-    height: 100px;
-    padding: auto;
+.topBanner .container{
     position: relative;
-    opacity:0.85;    
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
-.alltab div{    
-    opacity: 0; 
-    padding: 5px;
-    background: white;
+.topBanner h2{
+    font-size: 24px;
+    font-weight: 100;
+    letter-spacing: 0.040em;    
+    margin-bottom: 10px;
 }
 
-.allcontent01:hover div{    
-    opacity: 1; 
-    transition: 0.5s;
+.topBanner p{
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: -0.025em;    
+    margin-bottom: 10px;
 }
 
-.allcontent02:hover div{    
-    opacity: 1; 
-    transition: 0.1s;
+.topBanner a{
+    margin-left: 20px;
+    padding:0 20px 2px 20px;
+    height: 16px;
+    line-height: 14px;
+    font-size: 14px;
+    font-weight: 300;
+    border:black solid 1px;
 }
 
-.allcontent03:hover div{    
-    opacity: 1; 
-    transition: 0.1s;
+.topBanner .container i{
+    position:absolute;
+    top:0;
+    right:15px;
+    font-size: 24px;
+    cursor: pointer;
 }
 
-.allcontent04:hover div{    
-    opacity: 1; 
-    transition: 0.1s;
+/* topBanner : 22.03.17 수정 */
+/* Header : 22.03.17 수정 */
+
+.headerWrap{}
+
+.headerWrap .container{
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    line-height: 100px;
+}
+
+.headerWrap .container>* {
+    padding: 0 15px;
+}
+
+.headerWrap .serchForm{
+    margin-left: auto;
 }
 
 
-
-.alltab div:hover{
-    background: rgb(245, 185, 198);
-}
-
-
-
-.bgfixed {
-   padding: 200px 0;
-   text-align: center;
-   color: #fff;
-   background: url(../img_iu/iu4.jpg) no-repeat center center/cover ;
-   background-attachment: fixed;
-}
-
-.bgfixed h2{
-   font-size: 15px;
-   font-weight: 100;
-   letter-spacing: 1em;
-   margin-bottom: 30px;
-}
