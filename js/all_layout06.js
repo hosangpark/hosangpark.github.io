@@ -1,19 +1,9 @@
+$(function(){
 
-function moveon(){
-    var 번호 = $(this).index();    
-    $('.tabLink li').removeClass('active');
-    $(this).addClass('active');
-    $('.tabContent>div').removeClass('active');
-    $('.tabContent>div').eq(번호).addClass('active');
-//  $('.tabContent>div').eq(번호).addClass('active').sibling().removeClass('active');
-}
-
-
-
-$('.tabLink li').on('click', moveon);
-
-$('.xi-close').on('click', function(){
-    $('.headerWrap').slideToggle();
+    // topBanner:22.03.17 //
+    function topBannerHandler(){
+      //  $('.topBanner').hide();  display:none;//
+    $('.topBanner').slideUp();}
+    $('.topBanner .container i').on('click', topBannerHandler)
+    
 })
-
-// console.log($(this), $(this).index()) 
