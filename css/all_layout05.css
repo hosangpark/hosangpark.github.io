@@ -54,6 +54,7 @@ h1{
     position: absolute;
     left: 0%;
 }
+
 .contentmenu:nth-child(2){
     background: rgb(208, 233, 216);
     position: absolute;
@@ -92,6 +93,6 @@ h1{
 .bgfixed h2{
    font-size: 15px;
    font-weight: 100;
-   letter-spacing: 10em;
+   letter-spacing: 1em;
    margin-bottom: 30px;
 }
