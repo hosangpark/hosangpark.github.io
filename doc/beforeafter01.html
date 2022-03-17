@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상요소 만들기 01</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <style>
+        *{margin: 0;box-sizing: border-box;}
+        body{line-height: 1;}
+        .ba{
+            padding:100px 0;
+            text-align: center;
+        }
+        .ba:nth-child(even){
+            background: #f2f2f2;
+        }
+        .bas01 h2::before{
+            content:"before space";
+        }
+        .bas01 h2::after{
+            content:"after space";
+        }
+        .bas02 h2::before{
+            content:"";
+        }
+        .bas02 h2::after{
+            content:"";
+            display: block;
+            margin: 15px auto;
+            width: 50px;
+            height: 50px;
+            border-radius: 20px 0;
+            background:#369;
+        }
+        .bas03 h2::before{
+            content:"";
+            display: inline-block;            
+            width: 50px;
+            height: 1px;
+            background:#369;
+            vertical-align: middle;
+            margin: 0 10px;
+        }
+        .bas03 h2::after{
+            content:"";
+            display: inline-block;            
+            width: 50px;
+            height: 1px;
+            background:#369;
+            vertical-align: middle;
+            margin: 0 10px;
+        }
+      
+        .bas04 li::before{
+            content:"\e900";
+            font-family: xeicon!important;
+            display: inline-block;   
+            vertical-align: middle;
+            color: aqua;
+
+        }
+      
+        .bas05 p{
+            margin: 50px;
+        }
+
+        .bas05 .container {
+            display: flex;
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        .bas05 .container figure{
+            position: relative;
+            flex:1;
+            padding: 0 15px;
+        }
+        .bas05 img{
+            width: 100%;
+        }
+        .bas05 .container figure::after{
+            content:attr(data-num);
+
+            position: absolute;
+            top: -20px;
+            left: 0;
+
+            width: 60px;
+            height: 60px;
+
+            background: #b85b5b;
+        }
+
+    </style>
+</head>
+<body>
+  <!--  .ba.bas0$*5>h2{lorem} -->
+
+    <div class="ba bas01">
+        <h2>lorem</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda!</p>
+    </div>
+    <div class="ba bas02">
+        <h2>lorem</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda!</p>
+    </div>
+    <div class="ba bas03">
+        <h2>lorem</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda!</p>
+    </div>
+    <div class="ba bas04">
+        <h2>lorem<i class="xi-close"></i></h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda!</p>
+        <ul>
+            <li>Lorem ipsum dolor sit.</li>
+            <li>Lorem ipsum dolor sit.</li>
+            <li>Lorem ipsum dolor sit.</li>
+            <li>Lorem ipsum dolor sit.</li>
+        </ul>
+    </div>
+    <div class="ba bas05">
+        <h2>lorem</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda!</p>
+        <div class="container">
+            <figure date-num="01">
+                <img src="/github/images/lesedilarona01.jpg" alt="">
+            </figure>
+            <figure date-num="02">
+                <img src="/github/images/lesedilarona02.jpg" alt="">
+            </figure>
+            <figure date-num="03">
+                <img src="/github/images/lesedilarona03.jpg" alt="">
+            </figure>
+            <figure date-num="04">
+                <img src="/github/images/lesedilarona04.jpg" alt="">
+            </figure>
+        </div>
+    </div>
+ 
+</body>
+</html>
