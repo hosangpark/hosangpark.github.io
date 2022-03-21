@@ -518,10 +518,11 @@
 }
 
 .allProduct .slick-dots li{
-    width: 18px;
+    width: 13px;
     height: 13px;
     background: #333;
     border-radius: 50%;
+    
 }
 
 .allProduct .slick-dots li.slick-active {
@@ -549,4 +550,139 @@
 }
 .allProduct i:nth-child(2){
     margin-left: -700px;
+}
+
+.movieBg{
+    height: 500px;
+    padding: 100px 0;
+    background: #333;
+    filter: grayscale(1); /*백그라운드 갈색??*/
+
+    color: #fff;
+    text-align: center;
+}
+.movieBg h3 {
+    font-size: 19px;
+    font-weight: 100;
+    letter-spacing: 0.20em;
+    margin-bottom: 10px;
+}
+
+.movieBg p {
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: -0.025em;
+    margin-bottom: 30px;
+}
+.movieBg i {
+    font-size: 20px;
+    padding: 18px;
+    background: #333;
+    border-radius: 50%;
+}
+.customerArea{
+    padding: 100px 0;
+}
+
+.customerArea .container{
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    background: #f3f3f3;
+}
+.customerArea .container>div{
+    position: relative;
+    flex: 1;
+    padding: 0 15px;
+}
+
+.customerArea .container>div img{
+    filter: grayscale(1);
+}
+
+.customerArea .container>div .button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #b1fae2;
+    border: 2px solid #6fa191;
+    padding: 15px 30px;
+    border-radius: 10px;    
+    transition: 0.5s;
+}
+.customerArea .container>div:hover .button{
+    background: #42806b;
+    color: rgb(255, 255, 255);
+    border: 2px solid #6fa191;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.customerArea .container>div:hover img{
+    filter: grayscale(0);
+}
+
+.customerArea .container>div i{
+    position: absolute;
+    top: 10px;
+    right: 100px;
+    font-size: 50px;
+    color: #f00;
+    opacity: 0.1;
+    transition: 0.5s;
+}
+
+.customerArea .container>div:hover i{
+    opacity: 1;
+    animation: heart 0.11s infinite;
+}
+
+
+.customerArea .tabMenu{
+    display: flex;
+    background: #333;
+    color: #fff;
+}
+.customerArea .tabMenu>li{
+    flex: 1;
+    padding: 10px;
+
+}
+.customerArea .tabMenu>li.oo{
+    background: rgb(160, 166, 253);
+}
+.customerArea .tabMenu>li~li{
+    border-left: 1px solid #fff;
+}
+
+.customerArea .tabContent>div{
+    display: none;
+}
+.customerArea .tabContent>div.oo{
+    display: block;
+}
+.customerArea .tabContent a{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 3px;
+    border-bottom: 2px dotted rgb(153, 222, 240);
+}
+/*오버텍스트 ... 표시*/
+.customerArea .tabContent strong{
+    display: block;
+    width: 400px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.footerWrap{
+    height: 150px;
+    background: #333;
+}
+
+.footerWrap .footertop{
+    width: 1200px;
+    height: 50px;
+    margin: 0 auto;
 }
