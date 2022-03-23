@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기본으로 돌아가기 01</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <style>
+    header {height: 100px;background: #333;color: azure;text-align: center;line-height: 100px;}
+    footer {height: 100px;background: #333;color: azure;text-align: center;line-height: 100px;}
+    article{min-height: 500px;}
+    .subPage .greeting{padding: 100px 0;letter-spacing: -0.025em;}
+    .subPage .greeting h2{font-size: 30px;font-weight: 700;text-align: center;}
+    .subPage .greeting h2 span{color: rgb(67, 67, 238);font-size: 30px;font-weight: 700;text-align: center;}
+    .subPage .greeting h2::after{
+        content: "";
+        display: block;
+        width: 60px;
+        height: 2px;
+        background: #333;
+        margin: 20px auto;
+    }
+    .subPage .greeting>p{
+        text-align: center;
+        font-size: 15px;
+        font-weight: 300;
+        margin-bottom: 50px;
+    }
+    .subPage .greeting .container{
+        width: 1200px;
+        margin: 0 auto;
+        display: flex;
+    }
+    .subPage .greeting .container>div{
+        width: 60%;
+        padding: 0 15px;
+    }
+    .subPage .greeting .container>figure{
+        width: 40%;
+        padding: 0 15px;
+    }
+    .subPage .left h3{
+        font-size: 25px;
+        margin-bottom: 50px;
+        line-height: 1.4;
+    }
+    .subPage .left h3 span{
+        color: rgb(67, 67, 238);
+        font-weight: 300;
+    }
+    .subPage .left p{
+        line-height: 1.33;
+    }
+    .subPage .left p>span{
+        color: rgb(67, 67, 238);
+    }
+    .subPage .left strong{
+        font-weight: 700;
+    }
+    .subPage .info {
+        padding: 100px 0;
+        border-top: 1px solid silver;
+    }
+    .subPage .info .container{
+        width: 1200px;
+        margin: 0 auto;
+    }
+    .subPage .info h3{
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 15px;
+    }
+
+    .subPage .info h3::before{
+        content:"";
+        display: inline-block;
+        width: 3px;
+        height: 17px;
+        background: rgb(67, 67, 238);
+        margin-right: 10px;
+        font-weight: 300;
+    }
+    .subPage .info .infoTable{
+        width: 100%;
+        border-top: 2px solid #777;
+        border-bottom: 2px solid #777;
+        border-collapse: collapse;
+    }
+
+    .subPage .info .infoTable th{
+        font-weight: 600;
+        background: rgb(231, 231, 231);
+        padding: 25px 10px;
+    }
+    .subPage .info .infoTable th~th{
+        padding: 25px 10px;
+        border-left: 1px solid #777;
+    }
+
+    .subPage .info .infoTable td{
+        padding: 15px 10px;
+        border-top: 1px solid #777;;
+    }
+    .subPage .info .infoTable td~td{        
+        border-left: 1px solid #777;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="Wrap">
+        <header>header 😁</header>
+        <article class="subPage">
+            <section class="greeting">
+                <h2><span>CEO's </span>Greeting</h2>
+                <p>Lorem ipsum dolor sit amet</p>
+                <div class="container">
+                    <div class="left">
+                        <h3>Lorem ipsum dolor sit amet <br>
+                            <span> adipisicing elit.</span>
+                        </h3>
+                        <p>
+                            consectetur
+                            <span> adipisicing elit.</span>
+                            <br><br><span> Quibusdam, quis.</span>
+                            voluptatibus voluptate,<br><br>
+                            ducimus iusto dignissimos quos. <br><br><br>
+                            Repudiandae aspernatur quis recusandae.<br><br>
+                            voluptatibus voluptate,<br><br>
+                            <span> dignissimos illo.</span>
+                            ducimus iusto Quibusdam, quos. <br><br><br>
+                            Repudiandae aspernatur <strong> illo recusandae.</strong>
+                        </p>
+                    </div>
+                    <figure>
+                        <img src="../images/lesedilarona014.jpg" alt="">
+                    </figure>
+                </div>
+            </section>
+            <section class="info">
+                <div class="container">
+                    <h3>Lorem ipsum dolor sit.</h3>
+                    <table class="infoTable">
+                        <tr>
+                            <th>테이블</th>
+                            <th>맨윗줄</th>
+                            <th>가로정렬</th>
+                        </tr>
+                        <tr>
+                            <td>1000</td>
+                            <td>2000</td>
+                            <td>3000</td>
+                        </tr>
+                        <tr>
+                            <td>4000</td>
+                            <td>5000</td>
+                            <td>6000</td>
+                        </tr>
+                        <tr>
+                            <td>7000</td>
+                            <td>8000</td>
+                            <td>9000</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+        </article>
+        <footer> &copy; cost.</footer>
+    </div>
+    
+</body>
+</html>
