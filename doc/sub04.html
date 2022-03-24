@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sub04</title>
+    <link rel="stylesheet" href="../css/common.css" !important>
+    <style>
+        .Wrap header {
+            padding: 35px;
+            background: #666;
+        }
+
+        .subPage .hospitalContent {
+            padding: 100px 0;
+            letter-spacing: -0.025em;
+        }
+
+        .subPage .hospitalContent h2 {
+            font-size: 30px;
+            font-weight: 700;
+            text-align: center;
+            margin: 0 0 20px 0;
+        }
+
+        .subPage .hospitalContent h2::after {
+            content: "";
+            display: block;
+            width: 40px;
+            height: 2px;
+            background: #444;
+            margin: 15px auto;
+        }
+
+        .subPage .hospitalContent h2::before {
+            content: "";
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background: #444;
+            border-radius: 50%;
+            /* margin: 0 10px 15px 0; */
+            transform: translate(-10px, -15px);
+        }
+
+        .subPage .hospitalContent>p {
+            font-size: 15px;
+            font-weight: 300;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .subPage .container {
+            width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            /* flex-flow: wrap row; 플렉스 수직배열*/
+        }
+
+        .subPage .container .top {
+            display: flex;
+            width: 100%;
+            margin: 0 0 50px 0;
+        }
+
+        .subPage .container .left {
+            width: 50%;
+            padding: 0 0 0 30px;
+            position: relative;
+        }
+
+        .subPage .container .left::before {
+            content: "";
+            position: absolute;
+            top: 5px;
+            left: 0;
+            display: block;
+            width: 5px;
+            height: 55px;
+            background: #444;
+        }
+
+        .subPage .container .right {
+            width: 50%;
+            padding: 0 0 0 3px;
+        }
+
+        .subPage .container .top figure {
+            position: relative;
+            flex: 1;
+            height: 500px;
+            overflow: hidden;
+            filter: grayscale(0);
+        }
+
+        .subPage .container .top figure:hover {
+            filter: grayscale(0.5);
+        }
+
+        .subPage .container figure:nth-child(1) {
+            background: url(../images/lesedilarona013.jpg) no-repeat center center/cover;
+        }
+
+        .subPage .container figure:nth-child(2) {
+            background: url(../images/lesedilarona022.jpg) no-repeat center center/cover;
+        }
+
+        .subPage .container figure:nth-child(3) {
+            background: url(../images/lesedilarona023.jpg) no-repeat center center/cover;
+        }
+
+        .subPage .container figure:nth-child(4) {
+            background: url(../images/lesedilarona024.jpg) no-repeat center center/cover;
+        }
+
+        .subPage .top figure .inner {
+            position: absolute;
+            top: 0;
+            left: -100%;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 30px 20px;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            color: aliceblue;
+        }
+
+        .subPage .top figure:hover .inner {
+            left: 0;
+            transition: 0.5s;
+        }
+
+        .subPage .hospitalContent figure .inner h3 {
+            font-size: 20px;
+            font-weight: 500;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+            padding: 0 0 20px 0;
+            margin: 0 0 30px 0;
+        }
+
+        .subPage .hospitalContent figure .inner p {
+            flex: 1;
+            font-size: 15px;
+            font-weight: 300;
+            line-height: 1.4;
+        }
+
+        .subPage .hospitalContent figure .inner a {
+            width: 120px;
+            height: 30px;
+            line-height: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            text-align: center;
+        }
+
+        .subPage .hospitalContent .left h3 {
+            font-size: 40px;
+            font-weight: 700;
+            margin: 0 0 20px 0;
+        }
+
+        .subPage .hospitalContent .left p {
+            font-size: 15px;
+            font-weight: 300;
+        }
+
+        .dotList {
+            line-height: 1.6;
+        }
+
+        .dotList>li {
+            border-bottom: 1px solid #ddd;
+        }
+
+
+        .dotList>li::before {
+            content: "";
+            display: inline-block;
+            width: 3px;
+            height: 3px;
+            background: #444;
+            vertical-align: middle;
+            margin: 0 10px 0 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Wrap">
+        <header>
+            header
+        </header>
+
+        <article class="subPage">
+            <section class="hospitalContent">
+                <h2>Lorem ipsum dolor sit.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat rem tempore dicta!</p>
+
+                <div class="container">
+                    <div class="top">
+                        <figure>
+                            <div class="inner">
+                                <h3>Lorem, ipsum dolor.</h3>
+                                <p>Lorem ipsum dolor sit amet<br>
+                                    consectetur adipisicing elit. Ea, explicabo!</p>
+
+                                <a href="#!">MORE</a>
+                            </div>
+                        </figure>
+                        <figure>
+                            <div class="inner">
+                                <h3>Lorem, ipsum dolor.</h3>
+                                <p>Lorem ipsum dolor sit amet<br>
+                                    consectetur adipisicing elit. Ea, explicabo!</p>
+
+                                <a href="#!">MORE</a>
+                            </div>
+                        </figure>
+                        <figure>
+                            <div class="inner">
+                                <h3>Lorem, ipsum dolor.</h3>
+                                <p>Lorem ipsum dolor sit amet<br>
+                                    consectetur adipisicing elit. Ea, explicabo!</p>
+
+                                <a href="#!">MORE</a>
+                            </div>
+                        </figure>
+                        <figure>
+                            <div class="inner">
+                                <h3>Lorem, ipsum dolor.</h3>
+                                <p>Lorem ipsum dolor sit amet<br>
+                                    consectetur adipisicing elit. Ea, explicabo!</p>
+
+                                <a href="#!">MORE</a>
+                            </div>
+                        </figure>
+                    </div>
+                    <div class="left">
+                        <h3>Lorem, ipsum dolor.</h3>
+                        <p>Lorem ipsum dolor sit amet<br>
+                            consectetur adipisicing elit. Ea, explicabo!</p>
+
+                    </div>
+                    <ul class="right dotList">
+                        <li>Lorem, ipsum dolor.</li>
+                        <li>Lorem, ipsum dolor.</li>
+                        <li>Lorem, ipsum dolor.</li>
+                        <li>Lorem, ipsum dolor.</li>
+                        <li>Lorem, ipsum dolor.</li>
+                    </ul>
+                </div>
+
+
+            </section>
+        </article>
+
+
+
+
+    </div>
+
+</body>
+
+</html>
