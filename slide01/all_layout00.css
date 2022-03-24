@@ -1,0 +1,45 @@
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 500px;
+    height: 500px;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+}
+
+.swiper-button-next{
+    position: fixed;
+    top: 10x;
+    left: -50px;
+}
+.swiper-button-prev{
+    position: fixed;
+    top: 80px;
+    left: -50px;
+}
+.swiper-pagination{
+    left: -20px;
+}
+
+.mainSlide{
+    width: 1200px;
+    margin: 0 auto;
+}
+.firstcontainer {
+    display: flex;    
+    width: 300px;
+    height: 300px;
+}
+.secondcontainer{
+    display: flex;    
+    width: 300px;
+    height: 300px;
+}
+.thirdcontainer{
+    display: flex;    
+    width: 300px;
+    height: 300px;
+}
