@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sub06</title>
+    <link rel="stylesheet" href="../css/common.css" !important>
+
+    <style>
+        #subPage {
+            letter-spacing: -0.025em;
+        }
+
+        #subPage .info_content {
+            padding: 100px 0;
+        }
+
+        #subPage .info_content h2 {
+            font-size: 23px;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        #subPage .info_content span {
+            color: red;
+        }
+
+        #subPage .info_content h2::after {
+            content: "";
+            display: block;
+            width: 30px;
+            height: 2px;
+            background: #333;
+            margin: 15px auto;
+        }
+
+        #subPage .info_content p {
+            font-size: 15px;
+            font-weight: 300;
+            text-align: center;
+            margin: 0 0 50px 0;
+        }
+
+        #subPage .info_content .fixed_bg {
+            padding: 100px 0;
+            background: url(../images/mainvisual07.jpg) no-repeat center center/cover;
+            text-align: center;
+            color: #fff;
+            filter: grayscale(0.9);
+        }
+
+        #subPage .info_content .fixed_bg strong {
+            display: block;
+            font-size: 23px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        #subPage .info_content .fixed_bg p {
+            font-size: 13px;
+            font-weight: 300;
+        }
+
+        #subPage .info_content .container01 {
+            display: flex;
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        #subPage .info_content .container01 .itm {
+            flex: 1;
+            padding: 100px 15px;
+            position: relative;
+        }
+
+
+
+        #subPage .info_content .container01 .itm h3 {
+            font-size: 21px;
+            font-weight: 900;
+            text-align: center;
+            margin: 0 0 30px 0;
+        }
+
+        #subPage .info_content .container01 .itm i {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 50px;
+            color: #fff;
+            padding: 25px;
+            border-radius: 50%;
+        }
+
+        #subPage .info_content .container01 .itm:hover i {
+            transform: translate(-50%, -50%) rotateY(360deg);
+            transition: 0.5s;
+        }
+
+        #subPage .info_content .container01 .itm:nth-child(1) i {
+            background: rgb(56, 235, 235);
+        }
+
+        #subPage .info_content .container01 .itm:nth-child(2) i {
+            background: rgb(85, 230, 157);
+        }
+
+        #subPage .info_content .container01 .itm:nth-child(3) i {
+            background: rgb(209, 230, 95);
+        }
+
+        #subPage .info_content .dot_list li {
+            position: relative;
+            padding: 0 15px;
+            font-size: 13px;
+            font-weight: 300;
+            line-height: 1.4;
+        }
+
+        #subPage .info_content .dot_list li::before {
+            content: "";
+            position: absolute;
+            top: 7px;
+            left: 0;
+            width: 5px;
+            height: 5px;
+            background: rgb(255, 84, 84);
+            margin: 0 10px 0 0;
+
+        }
+
+        #subPage .info_event {
+            padding: 100px 0;
+            border-top: 1px solid #333;
+        }
+
+        #subPage .info_event h2 {
+            font-size: 23px;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        #subPage .info_event span {
+            color: red;
+        }
+
+        #subPage .info_event h2::after {
+            content: "";
+            display: block;
+            width: 30px;
+            height: 2px;
+            background: #333;
+            margin: 15px auto;
+        }
+
+        #subPage .info_event>p {
+            font-size: 15px;
+            font-weight: 300;
+            text-align: center;
+            margin: 0 0 50px 0;
+        }
+
+        #subPage .info_event .bg_box {
+            background: linear-gradient(to top, #96e4c2 65%, transparent 50%)
+        }
+
+        #subPage .info_event .bg_box .container {
+            display: flex;
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        #subPage .info_event .bg_box .container>div {
+            flex: 1;
+            padding: 15px 15px;
+        }
+
+        #subPage .info_event .bg_box .text {
+            border: 2px solid #333;
+            background: #fff;
+            padding: 30px 15px;
+        }
+
+        #subPage .info_event .bg_box .text h3 {
+            font-size: 17px;
+            font-weight: 700;
+            margin: 0 0 20px 0;
+        }
+
+        #subPage .info_event .bg_box .text p {
+            height: 200px;
+            font-size: 15px;
+            font-weight: 300;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Wrap">
+        <header>
+
+
+        </header>
+
+        <article id="subPage">
+            <section class="info_content">
+                <h2><span>DAON</span> WIDE SUB PAGE 12</h2>
+                <p>심플하지만 다 갖춘 다온 테마</p>
+                <div class="fixed_bg">
+                    <strong>심플하지만 다 갖춘 다온 테마</strong>
+                    <p><br>홈페이지에 꼭 필요한 기본 디자인 부트스트랩이 아닌 css기반 반응형 <br>
+                        홈페이지제작관련 궁금하신 사람은 언제든지 문의바랍니다. <br><br><br>
+                        이곳은 간략한 설명글이 들어갈 자리입니다.이곳은 간략한 설명글이 들어갈 자리입니다. <br>
+                        이곳은 간략한 설명글이 들어갈 자리입니다.
+                </div>
+                <div class="container01">
+                    <div class="itm">
+                        <i class="xi-kakaotalk"></i>
+                        <h3>미션</h3>
+                        <ul class="dot_list">
+                            <li>이곳은 간략한 설명글이 들어갈 자리입니다.</li>
+                            <li>이곳은 간략한 설명글이 들어갈 자리입니다. 이곳은 간략한 설명글이 들어갈 자리입니다.</li>
+                            <li>이곳은 간략한 설명글이 들어갈 자리입니다.</li>
+                        </ul>
+                    </div>
+                    <div class="itm">
+                        <i class="xi-facebook"></i>
+                        <h3>핵심가치</h3>
+                        <ul class="dot_list">
+                            <li>이곳은 간략한 설명글이 들어갈 자리입니다.</li>
+                            <li>이곳은 간략한 설명글이 들어갈 자리입니다.이곳은 간략한 설명글이 들어갈 자리입니다. 이곳은 간략한 설명글이 들어갈 자리입니다.</li>
+                            <li>이곳은 간략한 설명글이 들어갈 자리입니다.</li>
+                        </ul>
+                    </div>
+                    <div class="itm">
+                        <i class="xi-instagram"></i>
+                        <h3>미래지향</h3>
+                        <ul class="dot_list">
+                            <li>이곳은 간략한 설명글이 들어갈 자리입니다.</li>
+                            <li>이곳은 간략한 설명글이 들어갈 자리입니다. 이곳은 간략한 설명글이 들어갈 자리입니다.</li>
+                            <li>이곳은 간략한 설명글이 들어갈 자리입니다.</li>
+                        </ul>
+                    </div>
+            </section>
+            <section class="info_event">
+                <h2><span>DAON</span> WIDE SUB PAGE 12</h2>
+                <p>심플하지만 다 갖춘 다온 테마</p>
+                <div class="bg_box">
+                    <div class="container">
+                        <div class="itm">
+                            <div class="text">
+                                <h3>DAON WIDE SUB PAGE 12</h3>
+                                <p>심플하지만 다 갖춘 다온 테마</p>
+                            </div>
+                        </div>
+                        <div class="itm">
+                            <div class="text">
+                                <h3>DAON WIDE SUB PAGE 12</h3>
+                                <p>심플하지만 다 갖춘 다온 테마</p>
+                            </div>
+                        </div>
+                        <div class="itm">
+                            <div class="text">
+                                <h3>DAON WIDE SUB PAGE 12</h3>
+                                <p>심플하지만 다 갖춘 다온 테마</p>
+                            </div>
+                        </div>
+                        <div class="itm">
+                            <div class="text">
+                                <h3>DAON WIDE SUB PAGE 12</h3>
+                                <p>심플하지만 다 갖춘 다온 테마</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+
+
+        <footer>
+            &copy; cost.
+        </footer>
+
+
+
+
+    </div>
+
+</body>
+<script src="../js/jquery-1.12.4.min.js"></script>
+<script>
+
+</script>
+
+</html>

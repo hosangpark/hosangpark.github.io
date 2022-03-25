@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sub06</title>
+    <link rel="stylesheet" href="../css/common.css" !important>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+    <style>
+        #subPage .info_content {
+            padding: 100px 0;
+            letter-spacing: -0.025em;
+        }
+
+        #subPage .info_content h2 {
+            font-size: 40px;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        #subPage .info_content h2::after {
+            content: "";
+            display: block;
+            width: 40px;
+            height: 2px;
+            background: #333;
+            margin: 10px auto;
+        }
+
+        #subPage .info_content>p {
+            font-size: 15px;
+            font-weight: 300;
+            text-align: center;
+            margin: 0 0 50px 0;
+        }
+
+        #subPage .info_content .fixed_bg {
+            background: url(../images/mainvisual02.jpg) no-repeat center center/cover;
+            color: #fff;
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        #subPage .info_content .fixed_bg strong {
+            display: block;
+            font-family: 'Nanum Myeongjo', serif;
+            font-size: 20px;
+            font-weight: 500;
+            margin: 0 0 10px 0;
+        }
+
+        #subPage .info_content .fixed_bg p {
+            font-size: 15px;
+            font-weight: 300;
+        }
+
+        #subPage .info_content .container01 {
+            display: flex;
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        #subPage .info_content .container01 .inner {
+            position: relative;
+            overflow: hidden;
+            border-radius: 0 0 20px 20px;
+            border-bottom: 5px solid firebrick;
+        }
+
+        #subPage .info_content .container01 figure {
+            padding: 0 15px;
+        }
+
+        #subPage .info_content .container01 .inner:hover .text {
+            top: calc(100% - 200px);
+            opacity: 0.95;
+        }
+
+        #subPage .info_content .container01 .inner .text {
+            position: absolute;
+            top: calc(100% - 65px);
+            left: 0;
+            padding: 20px 15px;
+            background: #333;
+            color: #fff;
+            width: 100%;
+            height: 100%;
+            transition: 0.4s;
+
+        }
+
+        #subPage .info_content .container01 .text strong {
+            font-size: 30px;
+            font-weight: 900;
+        }
+
+        #subPage .info_content .container01 .text strong::after {
+            content: "";
+            display: block;
+            width: 30px;
+            height: 2px;
+            background: #fff;
+            margin: 15px 0 25px 0;
+        }
+
+        #subPage .info_content figure:nth-child(1) strong {
+            color: aqua;
+        }
+
+        #subPage .info_content figure:nth-child(2) strong {
+            color: rgb(93, 231, 167);
+        }
+
+        #subPage .info_content figure:nth-child(3) strong {
+            color: rgb(243, 222, 126);
+        }
+
+        #subPage .info_content figure:nth-child(4) strong {
+            color: rgb(138, 96, 236);
+        }
+
+        #subPage .info_content figure:nth-child(1) .inner {
+            color: bisque;
+        }
+
+        #subPage .info_content figure:nth-child(2) .inner {
+            color: bisque;
+        }
+
+        #subPage .info_content figure:nth-child(3) .inner {
+            color: bisque;
+        }
+
+        #subPage .info_content figure:nth-child(4) .inner {
+            color: bisque;
+        }
+
+        #subPage .info_content .container02 {
+            width: 1170px;
+            margin: 0 auto;
+            background: #f3f3f3;
+            padding: 30px 20px;
+        }
+
+        #subPage .info_content .container02 strong {
+            display: block;
+            font-size: 20px;
+            font-weight: 700;
+            margin: 0 0 30px 0;
+        }
+
+        #subPage .info_content .container02 p {
+            font-size: 15px;
+            font-weight: 300;
+            line-height: 1.4;
+            margin: 0 0 30px 0;
+        }
+
+        #subPage .info_content .container02 .list {
+            line-height: 1.6;
+        }
+
+        #subPage .info_content .container02 .list li:before {
+            content: "";
+            display: inline-block;
+            vertical-align: middle;
+            width: 5px;
+            height: 5px;
+            background: red;
+            border-radius: 50%;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Wrap">
+        <header>
+            header
+        </header>
+
+        <article id="subPage">
+            <section class="info_content">
+                <h2>Lorem ipsum dolor sit amet.</h2>
+                <p>elit ipsum, dolor sit amet consectetur adipisicing elit. Velit, eum.</p>
+                <div class="fixed_bg">
+                    <strong>consectetur adipisicing dolor sit amet elit ipsum.</strong>
+                    <p>ipsum dolor Veli ipsum consectetur</p>
+                </div>
+                <div class="container01">
+                    <figure>
+                        <div class="inner">
+                            <img src="../images/lesedilarona014.jpg" alt="">
+                            <div class="text">
+                                <strong>01</strong>
+                                <h3>Lorem, ipsum dolor.</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                            </div>
+                        </div>
+                    </figure>
+                    <figure>
+                        <div class="inner">
+                            <img src="../images/lesedilarona012.jpg" alt="">
+                            <div class="text">
+                                <strong>02</strong>
+                                <h3>Lorem, ipsum dolor.</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                            </div>
+                        </div>
+                    </figure>
+                    <figure>
+                        <div class="inner">
+                            <img src="../images/lesedilarona013.jpg" alt="">
+                            <div class="text">
+                                <strong>03</strong>
+                                <h3>Lorem, ipsum dolor.</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                            </div>
+                        </div>
+                    </figure>
+                    <figure>
+                        <div class="inner">
+                            <img src="../images/lesedilarona014.jpg" alt="">
+                            <div class="text">
+                                <strong>04</strong>
+                                <h3>Lorem, ipsum dolor.</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                            </div>
+                        </div>
+                    </figure>
+
+                </div>
+                <div class="container02">
+                    <strong> 🔺 꼭 읽어보세요</strong>
+                    <p>이곳은 긴박한 설명글이 들어갈 자리입니다. 이곳은 긴박한 설명글이 들어갈 자리입니다. 이곳은 긴박한 설명글이 들어갈 자리입니다. 이곳은 긴박한 설명글이 들어갈 자리입니다.
+                        이곳은
+                        긴박한 설명글이 들어갈 자리입니다.</p>
+                    <ul class="list">
+                        <li>이곳은 긴박한 설명글이 들어갈 자리입니다.</li>
+                        <li>이곳은 긴박한 설명글이 들어갈 자리입니다. 이곳은 긴박한 설명글이 들어갈 자리입니다.</li>
+                        <li>이곳은 긴박한 설명글이 들어갈 자리입니다.</li>
+                        <li>이곳은 긴박한 설명글이 들어갈 자리입니다.</li>
+                        <li>이곳은 긴박한 설명글이 들어갈 자리입니다. 이곳은 긴박한 설명글이 들어갈 자리입니다.</li>
+                        <li>이곳은 긴박한 설명글이 들어갈 자리입니다.</li>
+                    </ul>
+                </div>
+            </section>
+
+
+
+        </article>
+
+        <footer>
+            &copy; cost.
+        </footer>
+
+
+
+
+    </div>
+
+</body>
+<script src="../js/jquery-1.12.4.min.js"></script>
+<script>
+
+</script>
+
+</html>
